@@ -1,0 +1,470 @@
+*
+    font-family: 'Poppins', sans-serif
+    margin: 0
+
+section
+    padding: 70px 0 70px 0
+
+.hamburger
+    display: none
+.clicked
+    top: 0
+    right: 0 !important
+.second
+    display: none
+
+.container
+    max-width: 1200px
+    margin: 0 auto
+nav
+    margin-top: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 50px
+    .nav-list
+        list-style-type: none
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0
+        &-item
+            text-decoration: none
+            color: $dark
+            margin: 0 22px
+            &:first-child
+                a
+                    color: #fcae61
+            a
+                text-decoration: none
+                color: $dark
+            &:last-child
+                a
+                    +btn
+.logo
+    font-size: 30px
+    font-weight: 700
+    color: $dark
+    span
+        color: #fcae61
+.choice
+    background: url("../img/background.png") center (center/cover) no-repeat
+.row
+    padding: 0 70px
+    display: flex
+    justify-content: space-between
+    align-items: center
+.row-item
+        max-width: 580px
+
+.title
+    font-size: 36px
+    color: $dark
+    font-weight: 600
+    line-height: 50px
+
+.description
+    color: $gray
+    font-weight: 400
+    line-height: 26px
+
+.subtitle
+    font-size: 20px
+    color: $dark
+    font-weight: 600
+
+.achievement
+    display: flex
+    align-items: center
+    background-color: #e2eaed
+    border-radius: 32px
+    width: 53%
+    transition: .3s
+    &:hover
+        background-color: #fcae61
+        color: #ffffff
+        .achievement-icon
+            color: #fff
+    &-icon
+        border-radius: 16px
+        padding: 0 10px
+        color: $dark
+        transition: .3s
+    &-text
+        padding: 10px
+    &-title
+        font-size: 60px
+        color: $dark
+        font-weight: 700
+        line-height: 85px
+    &-description
+        font-size: 18px
+        color: #616368
+    &-links
+        margin-top: 40px
+        &-item
+            color: blue
+            text-decoration: none
+            margin: 0 12px
+            &:first-child
+                +btn
+.sponsors
+    &-title
+        color: $dark
+        text-align: center
+        font-weight: 700
+        margin-bottom: 40px
+
+
+
+.column
+    &-container
+        display: flex
+    &-block
+        display: flex
+        justify-content: space-between
+        padding: 20px 0
+        &-item
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-about
+            max-width: 300px
+
+.features
+    .column-container
+        flex-direction: column
+    .title-description
+        margin-bottom: 75px
+    .row-item
+        &-awesome
+            max-width: 420px
+            margin: 0 auto
+    .row-item > img
+        width: 100%
+    &-pink
+        background-color: rgba(245, 87, 103, 0.1)
+    &-blue
+        background-color: rgba(37, 99, 255, 0.1)
+    &-green
+        background-color: rgba(64, 151, 95, 0.1)
+
+.jackpots
+    .row
+        &:nth-child(2)
+            max-width: 1200px
+            justify-content: space-between
+            .column-block
+                flex-direction: column
+                &-item
+                    padding: 10px
+
+        &-item
+            max-width: 420px
+            &:nth-child(2)
+                padding: 45px
+                border-left: $gray 1px solid
+.design
+    border-bottom: #f4f4f4 1px solid
+    .row-item:nth-child(2)
+        max-width: 420px
+    .description-link
+        display: inline-block
+        margin: 40px 0
+        +btn
+    .row-item > img
+        width: 100%
+
+.reasons
+    &-title-block
+        margin: 0 auto
+        text-align: center
+        max-width: 640px
+    .row
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    .column-block
+        max-width: 340px
+        flex-direction: column
+        &-item
+            justify-content: center
+            text-align: center
+            &:first-child
+                padding: 30px
+    &-pink
+        background-color: rgba(255, 0, 40, 0.1)
+    &-cyan
+        background-color: rgba(0, 182, 255, 0.1)
+    &-yellow
+        background-color: rgba(255, 203, 0, 0.1)
+    &-green
+        background-color: rgba(0, 255, 94, 0.1)
+    &-blue
+        background-color: rgba(0, 0, 255, 0.1)
+    &-orange
+        background-color: rgba(255, 102, 0, 0.1)
+
+.planning
+    position: relative
+    min-height: 807px
+    .row
+        max-width: 800px
+        justify-content: left
+        &:nth-child(2)
+            flex-wrap: wrap
+    .column-block
+        max-width: 360px
+        &-item
+            &:first-child
+                padding: 10px
+.planning > img
+        position: absolute
+        right: 0
+        z-index: -1
+.planning
+        .row
+            &:nth-child(2)
+                max-width: 600px
+                flex-wrap: wrap
+        .column-block
+            flex-direction: column
+            &-item
+                &:first-child
+                    padding: 0
+        &-link-item
+            +btn
+
+.awesome
+    border-bottom: #f4f4f4 1px solid
+    &-title-block
+        margin: 0 auto
+        text-align: center
+        max-width: 640px
+        margin-bottom: 80px
+    .pay
+        margin: 0 auto
+        max-width: 280px
+        border: 1px solid $gray
+        border-radius: 32px
+        display: flex
+        padding: 2px
+        &-item
+            padding: 14px 35px
+            color: $gray
+            border-radius: 32px
+            &:first-child
+                background-color: $blue
+                color: #ffffff
+                font-weight: 700
+    .row
+        justify-content: center
+        align-items: flex-start
+        &-item
+            min-width: 300px
+            margin: 40px 20px
+            -webkit-box-shadow: 0 0 50px 0 rgba(34, 60, 80, 0.1)
+            -moz-box-shadow: 0 0 50px 0 rgba(34, 60, 80, 0.1)
+            box-shadow: 0 0 50px 0 rgba(34, 60, 80, 0.1)
+            border-radius: 20px 20px 20px 20px
+            &:nth-child(2)
+                border: 2px solid #ebebeb
+            &-top
+                min-height: 230px
+                background-color: #f1f1f1
+                display: flex
+                flex-direction: column
+                justify-content: center
+                text-align: center
+                border-radius: 20px 20px 0 0
+                .title
+                    font-size: 60px
+                    font-weight: 700
+                    margin: 10px 0
+                .title > span
+                    font-size: 18px
+                    color: $gray
+                .subtitle
+                    margin: 5px 0
+                    font-weight: 600
+            &-bottom
+                min-height: 240px
+                display: block
+                justify-content: center
+                text-align: center
+                padding: 30px 30px 0px 30px
+                border-radius: 0 0 20px 20px
+                .description
+                    margin: 20px 0
+
+    &-link-item
+        color: blue
+        text-decoration: none
+        margin: 20px auto
+        display: block
+        &:nth-child(5)
+            +btn
+
+.satisfaction
+    position: relative
+    min-height: 570px
+    .row
+        justify-content: right
+        &-item
+            max-width: 580px
+        .stars
+            padding: 15px 0
+            display: flex
+            justify-content: space-between
+            color: #ffcc00
+            max-width: 150px
+        .description
+            padding: 15px 0
+        .employee
+            display: flex
+            justify-content: space-between
+            .icon
+                background: url("../img/icons/employee.png") center (center/cover) no-repeat
+            &-description
+                display: flex
+                align-items: center
+                &-text
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    margin: 30px 15px 15px 15px
+            &-switch
+                max-width: 120px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                &-divider
+                    border: 1px #e0e0e0 solid
+                    height: 40%
+                    margin: 0 5px
+                &-btn
+                    width: 50px
+                    height: 50px
+                    border-radius: 100%
+                    border: 2px #e0e0e0 solid
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: #e0e0e0
+                    background-color: #ffffff
+                    cursor: pointer
+                    &:last-child
+                        background-color: #eff3f8
+                        border: 2px #eff3f8 solid
+                        color: $blue
+.satisfaction > img
+    position: absolute
+    left: 0
+    z-index: -1
+
+details summary::-webkit-details-marker
+    display: none
+
+details > summary
+    list-style: none
+
+
+.questions
+    border-bottom: #f4f4f4 1px solid
+    .plus
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: 20px
+        right: 20px
+        transform: translateX(-50%)
+        width: 26px
+        height: 26px
+        background-color: transparent
+        margin: 0 auto
+        border-radius: 100%
+        cursor: pointer
+        &:before
+            content: ""
+            display: block
+            width: 14px
+            height: 2px
+            background-color: #242f51
+            transition: 0.3s
+        &:after
+            content: ""
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            display: block
+            height: 14px
+            width: 2px
+            background-color: #242f51
+            transition: 0.3s
+    &-title-block
+        margin: 40px auto
+        text-align: center
+        max-width: 600px
+    .row
+        flex-direction: column
+        .subtitle
+            margin: 0 20px
+
+        &-question-item
+            background-color: #eff3f8
+            padding: 20px
+            position: relative
+            width: 100%
+            margin: 10px 0
+    &-description
+        color: $gray
+        padding: 20px
+
+
+.download
+    position: relative
+    .title
+        font-size: 48px
+    .row
+        &-item
+            max-width: 620px
+            &-images
+                margin: 80px 0
+                img
+                    padding: 0 10px
+.download > img
+    position: absolute
+    right: 0
+    z-index: -1
+
+.footer
+    padding: 115px 0
+    background-color: #09142e
+    text-align: center
+    .logo
+        color: #ffffff
+    &-links
+        display: flex
+        padding: 0
+        justify-content: space-between
+        max-width: 620px
+        margin: 30px auto
+        &:nth-child(3)
+            max-width: 250px
+            margin: 50px auto
+            font-size: 24px
+        &-item
+            padding: 0
+            list-style-type: none
+            a
+                text-decoration: none
+                color: #ffffff
+        .social
+            color: #273043
+            transition: .3s
+            &:hover
+                color: #ffffff
+    .copyright
+        color: #5c606b
